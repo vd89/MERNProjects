@@ -1,0 +1,25 @@
+{
+	"name": "first-project",
+	"version": "1.0.0",
+	"main": "server.js",
+	"license": "MIT",
+	"description": "Node, Express, MongoDB and React ",
+	"private": "false",
+	"author": "DaxCode",
+	"dependencies": {
+		"config": "^3.3.1",
+		"express": "^4.17.1",
+		"express-validator": "^6.5.0",
+		"mongoose": "^5.9.19"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.2",
+		"@babel/node": "^7.10.1",
+		"@babel/preset-env": "^7.10.2",
+		"nodemon": "^2.0.4"
+	},
+	"scripts": {
+		"start": "node --exec babel-node server.js",
+		"serve": "nodemon --exec babel-node server.js"
+	}
+}
