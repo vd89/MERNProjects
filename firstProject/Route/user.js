@@ -1,27 +1,25 @@
 /** @format */
 
-const { Router } = require('express');
+import { Router } from 'express';
+
+import { create, viewUsers } from '../Controllers/userController';
 
 const router = Router();
 
 /*
-  @Router: /api/user/test GET
+  @Router: /api/users/ GET
   @Test View route
   @Public Route
 */
 
-router.get('/test', (req, res) => {
-	res.json({ Msg: 'This is the rest Route' });
-});
+router.get('/', viewUsers);
 
 /*
-  @Router : /api/user/register POST
+  @Router : /api/users/register POST
   @Register New User
   @Public Route
 */
 
-router.post('/register', (req, res) => {
-	res.json({ Msg: 'This route is working' });
-});
+router.post('/register', create);
 
 export default router;

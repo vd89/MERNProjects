@@ -15,9 +15,6 @@ const userSchema = new Schema({
 	password: {
 		type: String,
 	},
-	avatar: {
-		type: String,
-	},
 	dataOfBirth: {
 		type: Date,
 	},
@@ -30,16 +27,16 @@ const userSchema = new Schema({
 	website: {
 		type: String,
 	},
-	experienct: {
-		type: String,
-	},
-	experienct: {
-		type: String,
+	experienc: {
+		type: Number,
 	},
 	language: {
 		type: Array,
 	},
 	color: {
+		type: String,
+	},
+	week: {
 		type: String,
 	},
 });
