@@ -15,29 +15,29 @@ const userSchema = new Schema({
 	password: {
 		type: String,
 	},
-	dataOfBirth: {
-		type: Date,
-	},
-	gender: {
-		type: String,
-	},
-	mobile: {
-		type: Number,
-	},
-	website: {
-		type: String,
-	},
-	experienc: {
-		type: Number,
-	},
-	language: {
-		type: Array,
-	},
-	color: {
-		type: String,
-	},
-	week: {
-		type: String,
-	},
+	// dataOfBirth: {
+	// 	type: Date,
+	// },
+	// gender: {
+	// 	type: String,
+	// },
+	// mobile: {
+	// 	type: Number,
+	// },
+	// website: {
+	// 	type: String,
+	// },
+	// experienc: {
+	// 	type: Number,
+	// },
+	// language: {
+	// 	type: Array,
+	// },
+	// color: {
+	// 	type: String,
+	// },
+	// week: {
+	// 	type: String,
+	// },
 });
 export default model('User', userSchema, 'users');
