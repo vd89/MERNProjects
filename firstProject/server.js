@@ -7,6 +7,9 @@ import userRoute from './Route/user';
 
 const app = express();
 
+// App Build
+app.use(express.static('build'));
+
 // App Middleware
 app.use(express.json());
 
